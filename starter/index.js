@@ -87,6 +87,7 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+// Variables for project 
 let total = 0;
 let sum = 0;
 let greatestIncrease = 0;
@@ -94,13 +95,17 @@ let greatestDecrease = 0;
 let greatestIncreaseMonth = '';
 let greatestDecreaseMonth = '';
 
-
+// Loop for all tasks
 for (let j = 0; j < finances.length; j++) {
+  // calculate total profit
   total += finances[j][1];
 
+  // Loop stop working before last element of array
   if (j < finances.length - 1) {
+      // Calculate all changes in profits and losses
       sum += finances[j + 1][1] - finances[j][1];
 
+      // Search the most Increase and Decrease change and reasign values
       if (finances[j + 1][1] - finances[j][1] > greatestIncrease) {
         greatestIncrease = finances[j + 1][1] - finances[j][1];
         greatestIncreaseMonth = finances[j + 1][0];
@@ -112,10 +117,10 @@ for (let j = 0; j < finances.length; j++) {
   }    
 }
 
-
+//Calculate avarage change profits/losses
 let avarageChange = sum / (finances.length - 1);
 
-
+//Console results
 console.log('Financial Analysis');
 console.log('----------------------------');
 console.log('Total Months: ' + finances.length);
