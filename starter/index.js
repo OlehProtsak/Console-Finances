@@ -99,7 +99,6 @@ for (let j = 0; j < finances.length; j++) {
   total += finances[j][1];
 
   if (j < finances.length - 1) {
-    if (finances[j][1] > 0 && finances[j + 1][1] > 0) {
       sum += finances[j + 1][1] - finances[j][1];
 
       if (finances[j + 1][1] - finances[j][1] > greatestIncrease) {
@@ -110,47 +109,9 @@ for (let j = 0; j < finances.length; j++) {
         greatestDecrease = finances[j + 1][1] - finances[j][1];
         greatestDecreaseMonth = finances[j + 1][0];
       }
-      
-    } else if (finances[j][1] < 0 && finances[j + 1][1] < 0) {
-      sum += finances[j + 1][1] - finances[j][1];
-
-      if (finances[j + 1][1] - finances[j][1] > greatestIncrease) {
-        greatestIncrease = finances[j + 1][1] - finances[j][1];
-        greatestIncreaseMonth = finances[j + 1][0];
-
-      } else if (finances[j + 1][1] - finances[j][1] < greatestDecrease) {
-        greatestDecrease = finances[j + 1][1] - finances[j][1];
-        greatestDecreaseMonth = finances[j + 1][0];
-      }
-      
-    } else if (finances[j][1] > 0 && finances[j + 1][1] < 0) {
-      sum += -finances[j][1] + finances[j + 1][1];
-
-      if (finances[j + 1][1] - finances[j][1] > greatestIncrease) {
-        greatestIncrease = finances[j + 1][1] - finances[j][1];
-        greatestIncreaseMonth = finances[j + 1][0];
-
-      } else if (finances[j + 1][1] - finances[j][1] < greatestDecrease) {
-        greatestDecrease = finances[j + 1][1] - finances[j][1];
-        greatestDecreaseMonth = finances[j + 1][0];
-      }
-      
-    } else if (finances[j][1] < 0 && finances[j + 1][1] > 0) {
-      sum+= finances[j + 1][1] - finances[j][1];
-
-      if (finances[j + 1][1] - finances[j][1] > greatestIncrease) {
-        greatestIncrease = finances[j + 1][1] - finances[j][1];
-        greatestIncreaseMonth = finances[j + 1][0];
-
-      } else if (finances[j + 1][1] - finances[j][1] < greatestDecrease) {
-        greatestDecrease = finances[j + 1][1] - finances[j][1];
-        greatestDecreaseMonth = finances[j + 1][0];
-      }
-      
-    }
-  }
-
+  }    
 }
+
 
 let avarageChange = sum / (finances.length - 1);
 
