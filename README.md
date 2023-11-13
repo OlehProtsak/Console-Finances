@@ -1,97 +1,44 @@
-# Unit 4 Challenge: Console Finances
+# Console-Finances
 
-## Overview
+Console-Finances is a simple JavaScript project designed to provide a financial analysis for companies. It leverages JavaScript loops and variables to offer quick insights into a company's financial situation.
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+## Table of Contents
+- [Project Name](#console-finances)
+- [Description](#description)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Usage](#example-usage)
+- [Prerequisites](#prerequisites)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Instructions
+## Description
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+The main goal of Console-Finances is to offer a straightforward financial analysis using JavaScript fundamentals. Whether you're a business owner or an analyst, Console-Finances provides a quick and accessible overview of a company's financial status.
 
-2. Copy the starter files in your local git repository.
+## Key Features
 
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
+- **Simple Analysis:** Utilizes JavaScript loops and variables for a basic yet insightful financial analysis.
+- **Easy Setup:** Just clone the repository to your local machine.
+- **Console Output:** Open the console and see the financial analysis results.
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+## Installation
 
-* The total number of months included in the dataset.
+To use Console-Finances, simply clone the repository to your local machine.
 
-* The net total amount of Profit/Losses over the entire period.
+## Example Usage
 
-* The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-  * (`Total/(Number of months - 1)`)
+For now, Console-Finances is not designed to be reusable. Simply follow the installation steps and run the analysis to see the results.
 
-* The greatest increase in Profit/Losses (date and amount) over the entire period.
+## Prerequisites
 
-* The greatest decrease in Profit/Losses (date and amount) over the entire period.
+There are no specific prerequisites for Console-Finances.
 
-When you open your code in the browser your resulting analysis should look similar to the following:
+## Contributing
 
-  ```text
-  Financial Analysis 
-  ----------------
-  Total Months: 86
-  Total: $38382578
-  Average Change: -2315.12
-  Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-  Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-  ```
+Console-Finances is not currently open for external contributions.
 
-Your final code should print the analysis to the console.
+## License
 
-**Hints:**
-
-* You will need to do some research on your own for this project!
-
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
-
-* How do you only print to the nearest 100th in JavaScript?
-
-## Grading Requirements
-
-This homework is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Repository Quality: 23%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 5%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This project is licensed under the MIT License - see the LICENSE file for details.
